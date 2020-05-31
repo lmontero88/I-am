@@ -9,10 +9,10 @@ body{
     margin: auto;
 }
 .body { width: 100%;
-    background: red;
     padding-top: 6rem;
 
 }
+/*inicia header*/
 #navbar{
     position: fixed;
     top: 0;
@@ -28,13 +28,15 @@ body{
     justify-content: space-evenly;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    
 }
 #navbar ul li a{
     text-decoration: none;
     color: white;
-    font-size: 1.75rem;
+    font-size: 1.7rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+/*inicia section I am*/
 
 #welcome-section{
     width:100%;
@@ -42,7 +44,7 @@ body{
     color:#ffffff;
     text-align:center;
     font-size:2em;
-    background: rgb(29, 28, 28);
+    background: #3a393f;
 }
 .iam{
     padding-top: 6rem;
@@ -60,3 +62,85 @@ body{
     color: rgb(173, 57, 57);
     
 }
+/*inicia section works*/
+
+#projects {
+    background: rgb(76, 81, 114);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 200px;
+    grid-template-areas: "texto texto"
+                         "img  img"
+                         "img  img"
+                         "texto2 texto2";
+}
+#projects h2 {
+    grid-area: texto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    
+    
+}
+
+.project-tile  {
+    grid-area: img;
+    display: flex;
+    justify-content: space-around;
+    
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+}
+
+.project-tile a  {
+    color: white;
+    text-decoration: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+.project-tile a p {
+    background: #3a393f;;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.project-tile a p:hover{
+    background: brown;
+    color: gray;
+
+}
+.project-tile a img{
+    border-radius: 10px;
+}
+.text2 {
+    grid-area: texto2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+}
+.text2 a {
+    color: white;
+    font-size: 2rem;
+    background: rgb(173, 57, 57);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.text2 a:hover{
+    background: grey;
+}
+
+/*section footer*/
+
+
