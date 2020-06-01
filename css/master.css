@@ -4,7 +4,6 @@
 
 body{
     width: 100%;
-    background:rgb(29, 28, 28);
     max-width: 1400px;
     margin: auto;
 }
@@ -91,7 +90,6 @@ body{
     grid-area: img;
     display: flex;
     justify-content: space-around;
-    
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
@@ -99,7 +97,7 @@ body{
 }
 
 .project-tile a  {
-    color: white;
+    color: rgb(252, 245, 245);
     text-decoration: none;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -107,7 +105,7 @@ body{
     font-size: 1.5rem;
 }
 .project-tile a p {
-    background: #3a393f;;
+    background: #3a393f;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -142,5 +140,86 @@ body{
 }
 
 /*section footer*/
+#soy {
+    background: #3a393f;
+    padding-top: 7rem;
+}
+.listaredes {
+    background: rgb(173, 57, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.listaredes a {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.textfooter{
+    padding: 4rem 1rem 1rem 1rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+      background-color: #3a393f;
+    }
+    #navbar ul li a{
+        font-size: 20px;
+    }
+    #welcome-section{
+        font-size:1em;
+    }
+    .iam{
+        padding-top: 2rem;
+    }
+    .imgyo{
+        padding-top: 1rem;
+        width: 200px;
+    }
+    .iam h2{
+        font-size: 1em;
+        padding-top: 2rem;
+    }
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr 200px;
+        grid-template-areas: "texto"
+                             "img"
+                             "img"
+                             "texto2";
+    }
+    .project-tile  {
+        width: 70%;
+    }
+        
+
+
+    #projects h2 {
+        font-size: 1.2rem;
+    }
+    .project-tile a p {
+        font-size: 16px;
+    }
+   
+    .project-tile a img{
+        width: 300px;
+  }
+  .text2 a{
+      font-size: 1.4rem;
+  }
+  .textfooter p{
+    text-align: justify;
+    font-size: 7px;
+}
+}
+
 
 
